@@ -28,5 +28,11 @@
 }
 
 /*SECONDARY-HEADER*/
+.secondary-header{
+    background-color: #1B72E8;
+    height: 300px;
+    width: 100%;
+    overflow: auto;
+}
 
 /*MAIN*/
