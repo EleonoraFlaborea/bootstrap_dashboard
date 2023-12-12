@@ -8,3 +8,17 @@
     background-color: white;
     border: 3px dashed green;
 }
+
+/*CONTAINER-SECTION*/
+.container-section{
+    background-color: white;
+    height: calc(100vh - 80px);
+    overflow: auto;
+    border: 3px dashed red;
+}
+
+/*NAVBAR*/
+
+/*SECONDARY-HEADER*/
+
+/*MAIN*/
