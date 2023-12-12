@@ -1,31 +1,80 @@
 /*UTILS*/
+img{
+    width: 100%;
+}
 
+li{
+    list-style-type: none;
+}
 
+.d-none{
+   display: none;
+}
 
 /*MAIN-HEADER*/
 .main-header{
-    height: 80px;
+    min-height: 80px;
     background-color: white;
-    border: 3px dashed green;
 }
+
+/*logo*/
+.mobile-logo{
+    width: 60px;
+    align-self: center;
+}
+
+/*search input*/
+.input-group{
+    margin: 15px;
+}
+
+.form-control{
+    background-color: #f8f9fa;
+}
+
+/*icons*/
+.icon-orange{
+    color: #FD8F00;
+}
+
+@media screen and (min-width: 960px){
+    .desktop-icon{
+        display: block!important;
+    }
+
+    .desktop-logo{
+        display: block!important;
+        align-self: center;
+    }
+
+    .mobile-logo{
+        display: none!important;
+
+    }
+}
+    
+
+
+
 
 /*CONTAINER-SECTION*/
 .container-section{
     background-color: white;
     height: calc(100vh - 80px);
     overflow: auto;
-    border: 3px dashed red;
     display: flex;
     overflow: auto;
 }
 
 /*NAVBAR*/
 .sidebar{
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051E34;
+
     flex-basis: 80px;
     flex-shrink: 0;
     flex-direction: column;
     overflow: auto;
-    border: 3px dashed olivedrab;
 
     position: sticky;
     top: 0;
@@ -43,6 +92,4 @@
 /*MAIN*/
 main{
     overflow: auto;
-    border: 3px dashed black;
-
 }
