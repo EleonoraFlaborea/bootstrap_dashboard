@@ -1,4 +1,8 @@
 /*UTILS*/
+body{
+    font-size: 20px;
+}
+
 img{
     width: 100%;
 }
@@ -37,26 +41,6 @@ li{
     color: #FD8F00;
 }
 
-@media screen and (min-width: 960px){
-    .desktop-icon{
-        display: block!important;
-    }
-
-    .desktop-logo{
-        display: block!important;
-        align-self: center;
-    }
-
-    .mobile-logo{
-        display: none!important;
-
-    }
-}
-    
-
-
-
-
 /*CONTAINER-SECTION*/
 .container-section{
     background-color: white;
@@ -85,11 +69,63 @@ li{
 /*SECONDARY-HEADER*/
 .secondary-header{
     background-color: #1B72E8;
-    height: 200px;
+    min-height: 200px;
     overflow: auto;
+}
+
+.btn-darkblue{
+    background-color: #165BBA;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn-plus{
+    font-size: 20px;
+}
+
+.header-number{
+    font-size: 30px;
 }
 
 /*MAIN*/
 main{
     overflow: auto;
+}
+
+/*MEDIA QUERY*/
+@media screen and (min-width: 768px){
+    .col-online{
+        order: 1;
+    }
+    .col-new{
+       order: 2;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .desktop-icon{
+        display: block!important;
+    }
+
+    .desktop-logo{
+        display: block!important;
+        align-self: center;
+    }
+
+    .mobile-logo{
+        display: none!important;
+
+    }
+
+    .btn-desktop{
+        display: inline-block!important;
+    }
+
+    .btn-more{
+        display: none!important;
+    }
+
+    .btn-darkblue{
+        font-size: 10px;
+    }
 }
