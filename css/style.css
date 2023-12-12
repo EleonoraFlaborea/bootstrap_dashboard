@@ -128,4 +128,16 @@ main{
     .btn-darkblue{
         font-size: 10px;
     }
+
+    .nav-text{
+        display: inline-block!important;
+    }
+
+    .sidebar{
+        flex-basis: 130px;
+    }
+
+    .sidebar ul{
+        padding-left: 15px;
+    }
 }
