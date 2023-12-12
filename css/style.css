@@ -15,9 +15,17 @@
     height: calc(100vh - 80px);
     overflow: auto;
     border: 3px dashed red;
+    display: flex;
 }
 
 /*NAVBAR*/
+.sidebar{
+    flex-basis: 80px;
+    flex-shrink: 0;
+    flex-direction: column;
+    
+    border: 3px dashed olivedrab;
+}
 
 /*SECONDARY-HEADER*/
 
