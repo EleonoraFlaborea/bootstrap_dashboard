@@ -86,22 +86,103 @@
                 <div class="row flex-wrap row-cols-1 row-cols-md-3 row-gap-3 ps-4 pt-5">
 
                     <div class="col col-new"> 
-                        <p>Nuovo Studente <button class="btn btn-outline-light btn-plus ms-2">+</button></p>
+                        <p>
+                          Nuovo Studente 
+                          <!--Offcanvas-->
+                          <button class="btn btn-plus btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <!--Form-->
+                              <form>
+                                <div class="mb-3">
+                                  <label for="name" class="form-label">Nome</label>
+                                  <input type="name" class="form-control" id="name" aria-describedby="emailHelp">
+                                  <div id="name" class="form-text"></div>
+                                </div>
+
+                                <div class="mb-3">
+                                  <label for="lastname" class="form-label">Cognome</label>
+                                  <input type="lastname" class="form-control" id="lastname">
+                                </div>
+
+                                <label for="email" class="form-label d-block">Email</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1">@</span>
+                                  <input type="email" class="form-control" aria-label="email" aria-describedby="basic-addon1">
+                                </div>
+
+                                <div class="mb-3">
+                                  <label for="password" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="password">
+                                </div> 
+                                
+                                <div class="mb-3">
+                                  <label for="address" class="form-label">Indirizzo</label>
+                                  <input type="address" class="form-control" id="address">
+                                </div> 
+                                
+                                <div class="mb-3">
+                                  <label for="city" class="form-label">Città</label>
+                                  <input type="city" class="form-control" id="city">
+                                </div>
+
+                                <label for="city" class="form-label">Stato</label>
+                                <select class="form-select" aria-label="Default select example">
+                                  <option selected>Scegli...</option>
+                                  <option value="1">Italia</option>
+                                  <option value="2">Germania</option>
+                                  <option value="3">Francia</option>
+                                </select>
+
+                                 <div class="mb-3">
+                                  <label for="postalcode" class="form-label">CAP</label>
+                                  <input type="postalcode" class="form-control" id="postalcode">
+                                </div>
+
+                                <div class="mb-3">
+                                  <label for="formFile" class="form-label">Foto</label>
+                                  <input class="form-control" type="file" id="formFile">
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Salva</button>
+                                <button type="submit" class="btn btn-warning">Svuota</button>
+
+                              </form>
+
+
+
+                            </div>
+                          </div>
+
+
+
+                        </p>
                     </div>
 
                     <div class="col col-btn">
-                        <h2>Boolean <button class="btn btn-darkblue">Piano blaze</button></h2>
+                      <h2>Boolean <button class="btn btn-darkblue">Piano blaze</button></h2>
                         
-                        <button class="btn btn-darkblue">3 app</button>
-                        <i class="fa-solid fa-angles-right"></i>
-                        <button class="btn btn-darkblue d-none">+</button>
+                      <button class="btn btn-darkblue">3 app</button>
+                      <i class="fa-solid fa-angles-right"></i>
+                      <button class="btn btn-darkblue d-lg-none">+</button>
+  
 
-                        <!--Desktop BTN -->
-                        <div class="d-none d-lg-block">
-                            <button class="btn btn-darkblue">Boolean mobile app</button>
-                            <button class="btn btn-darkblue">Boolean web app</button>
-                            <button class="btn btn-darkblue">Boolean blog app</button>
-                        </div>
+                      <!--Desktop BTN -->
+                      <div class="d-none d-lg-inline">
+                        <button class="btn btn-darkblue">Boolean mobile app</button>
+                        <button class="btn btn-darkblue">Boolean web app</button>
+                        <button class="btn btn-darkblue">Boolean blog app</button>
+                      </div>
                     </div>
 
                     <div class="col col-online">
