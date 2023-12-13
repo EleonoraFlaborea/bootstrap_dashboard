@@ -11,10 +11,6 @@ li{
     list-style-type: none;
 }
 
-.d-none{
-   display: none;
-}
-
 /*MAIN-HEADER*/
 .main-header{
     min-height: 80px;
@@ -24,6 +20,10 @@ li{
 /*logo*/
 .mobile-logo{
     width: 60px;
+    align-self: center;
+}
+
+.desktop-logo{
     align-self: center;
 }
 
@@ -103,34 +103,9 @@ main{
 }
 
 @media screen and (min-width: 992px){
-    .desktop-icon{
-        display: block!important;
-    }
-
-    .desktop-logo{
-        display: block!important;
-        align-self: center;
-    }
-
-    .mobile-logo{
-        display: none!important;
-
-    }
-
-    .btn-desktop{
-        display: inline-block!important;
-    }
-
-    .btn-more{
-        display: none!important;
-    }
 
     .btn-darkblue{
         font-size: 10px;
-    }
-
-    .nav-text{
-        display: inline-block!important;
     }
 
     .sidebar{
