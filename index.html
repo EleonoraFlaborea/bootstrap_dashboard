@@ -41,10 +41,23 @@
         <!--icons-->
         <div class="header-icons">
             <ul class="d-flex justify-content-center gap-3 pt-4 pe-4">
-                <li class="d-none d-lg-block"><i class="fa-solid fa-list-ul"></i></li>
-                <li class="d-none d-lg-block"><i class="fa-solid fa-circle-question"></i></li>
-                <li class="d-none d-lg-block"><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                <li class="icon-orange"><i class="fa-solid fa-bell"></i></li>
+                <li class="d-none d-lg-block pt-1"><i class="fa-solid fa-list-ul"></i></li>
+                <li class="d-none d-lg-block pt-1"><i class="fa-solid fa-circle-question"></i></li>
+                <li class="d-none d-lg-block pt-1"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+
+                <li>
+                  <div class="btn-group dropstart">
+                    <button type="button" class="btn dropdown-toggle icon-orange" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-bell"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li> <a class="dropdown-item" href="#">Profilo</a></li>
+                      <li> <a class="dropdown-item" href="#">Fatturazione</a></li>
+                      <li> <a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </div>
+                </li>
+
             </ul>
         </div>
     
@@ -210,7 +223,7 @@
 
             <!--MAIN-->
             <main>
-                <div class="row row-cols-1 row-cols-lg-2 ps-4">
+                <div class="row row-cols-1 row-cols-lg-2 p-4">
                   <div class="col-12 col-lg-8">
 
                     <!--table-->
