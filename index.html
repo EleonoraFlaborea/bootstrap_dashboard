@@ -98,68 +98,83 @@
                             </div>
                             <div class="offcanvas-body">
                               <!--Form-->
-                              <form>
-                                <div class="mb-3">
-                                  <label for="name" class="form-label">Nome</label>
-                                  <input type="name" class="form-control" id="name" aria-describedby="emailHelp">
-                                  <div id="name" class="form-text"></div>
+                              <div class="row row-cols-1">
+
+                                <div class="col">
+                                  <form>
+                                    <div class="mb-3">
+                                      <label for="name" class="form-label">Nome</label>
+                                      <input type="name" class="form-control" id="name" aria-describedby="emailHelp">
+                                      <div id="name" class="form-text"></div>
+                                    </div>
+    
+                                    <div class="mb-3">
+                                      <label for="lastname" class="form-label">Cognome</label>
+                                      <input type="lastname" class="form-control" id="lastname">
+                                    </div>
+
+                                    <label for="email" class="form-label d-block">Email</label>
+                                    <div class="input-group mb-3">
+                                      <span class="input-group-text" id="basic-addon1">@</span>
+                                      <input type="email" class="form-control" aria-label="email" aria-describedby="basic-addon1">
+                                    </div>
+    
+                                    <div class="mb-3">
+                                      <label for="password" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="password">
+                                    </div> 
+                                  </form>
                                 </div>
 
-                                <div class="mb-3">
-                                  <label for="lastname" class="form-label">Cognome</label>
-                                  <input type="lastname" class="form-control" id="lastname">
+                                <div class="col">
+                                  <form>
+                                    <div class="mb-3">
+                                      <label for="address" class="form-label">Indirizzo</label>
+                                      <input type="address" class="form-control" id="address">
+                                    </div>
+                                  </form>
                                 </div>
 
-                                <label for="email" class="form-label d-block">Email</label>
-                                <div class="input-group mb-3">
-                                  <span class="input-group-text" id="basic-addon1">@</span>
-                                  <input type="email" class="form-control" aria-label="email" aria-describedby="basic-addon1">
+                                <div class="col">
+                                  <form>
+                                    <div class="mb-3">
+                                      <label for="city" class="form-label">Città</label>
+                                      <input type="city" class="form-control" id="city">
+                                    </div>
+    
+                                    <label for="city" class="form-label">Stato</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                      <option selected>Scegli...</option>
+                                      <option value="1">Italia</option>
+                                      <option value="2">Germania</option>
+                                      <option value="3">Francia</option>
+                                    </select>
+    
+                                     <div class="mb-3">
+                                      <label for="postalcode" class="form-label">CAP</label>
+                                      <input type="postalcode" class="form-control" id="postalcode">
+                                    </div>
+
+                                  </form>
                                 </div>
 
-                                <div class="mb-3">
-                                  <label for="password" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="password">
-                                </div> 
-                                
-                                <div class="mb-3">
-                                  <label for="address" class="form-label">Indirizzo</label>
-                                  <input type="address" class="form-control" id="address">
-                                </div> 
-                                
-                                <div class="mb-3">
-                                  <label for="city" class="form-label">Città</label>
-                                  <input type="city" class="form-control" id="city">
+                                <div class="col">
+                                  <form>
+                                    <div class="mb-3">
+                                      <label for="formFile" class="form-label">Foto</label>
+                                      <input class="form-control" type="file" id="formFile">
+                                    </div>
+    
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                      <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                                    </div>
+    
+                                    <button type="submit" class="btn btn-primary">Salva</button>
+                                    <button type="submit" class="btn btn-warning">Svuota</button>
+                                  </form>
                                 </div>
-
-                                <label for="city" class="form-label">Stato</label>
-                                <select class="form-select" aria-label="Default select example">
-                                  <option selected>Scegli...</option>
-                                  <option value="1">Italia</option>
-                                  <option value="2">Germania</option>
-                                  <option value="3">Francia</option>
-                                </select>
-
-                                 <div class="mb-3">
-                                  <label for="postalcode" class="form-label">CAP</label>
-                                  <input type="postalcode" class="form-control" id="postalcode">
-                                </div>
-
-                                <div class="mb-3">
-                                  <label for="formFile" class="form-label">Foto</label>
-                                  <input class="form-control" type="file" id="formFile">
-                                </div>
-
-                                <div class="mb-3 form-check">
-                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                  <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary">Salva</button>
-                                <button type="submit" class="btn btn-warning">Svuota</button>
-
-                              </form>
-
-
+                              </div>
 
                             </div>
                           </div>
@@ -195,7 +210,7 @@
 
             <!--MAIN-->
             <main>
-                <div class="row row-cols-1 row-cols-lg-2 p-4">
+                <div class="row row-cols-1 row-cols-lg-2 ps-4">
                   <div class="col-12 col-lg-8">
 
                     <!--table-->
@@ -368,7 +383,7 @@
                           </div>
                         </div>
                     </div>
-
+                  </div>
                   <div class="col-12 col-lg-4">
 
                     <!--to do-->
