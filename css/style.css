@@ -57,13 +57,21 @@ li{
 
     flex-basis: 80px;
     flex-shrink: 0;
-    flex-direction: column;
+    flex-direction: row;
     overflow: auto;
+    justify-content: space-around;
 
     position: sticky;
     top: 0;
     bottom: 0;
     right: 0;
+
+    text-align: center;
+}
+
+/* todo: da capire!!!*/
+.nav-down{
+    margin-top: 700px;
 }
 
 /*SECONDARY-HEADER*/
@@ -91,6 +99,11 @@ li{
 main{
     overflow: auto;
 }
+
+.table-text{
+    text-align: center;
+}
+
 
 /*MEDIA QUERY*/
 @media screen and (min-width: 768px){
